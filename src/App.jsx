@@ -1,14 +1,11 @@
 import "./App.css";
-import { FaHome } from "react-icons/fa";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-roboto font-bold underline">Hello world!</h1>
-      <h1 className="text-3xl font-poppins font-bold underline">
-        Hello world! <FaHome />
-      </h1>
-    </>
+    <div className="max-w-[1170px] mx-auto px-3 lg:px-0">
+      <Navbar></Navbar>
+    </div>
   );
 }
 
