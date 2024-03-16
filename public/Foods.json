@@ -1,6 +1,6 @@
 [
   {
-    "recipe_image": "https://i.ibb.co/gJh1fs0/14218.jpg",
+    "recipe_image": "https://i.ibb.co/TwBTHcb/20212.jpg",
     "recipe_id": 1,
     "recipe_name": "Chicken Stir Fry",
     "short_description": "A delicious and easy chicken stir fry with veggies.",
@@ -16,7 +16,7 @@
     "calories": "320 calories"
   },
   {
-    "recipe_image": "https://i.ibb.co/26F8wVt/18813.jpg",
+    "recipe_image": "https://i.ibb.co/xfZmY4q/19739.jpg",
     "recipe_id": 2,
     "recipe_name": "Vegetable Pasta",
     "short_description": "A hearty pasta dish loaded with fresh vegetables.",
@@ -32,7 +32,7 @@
     "calories": "250 calories"
   },
   {
-    "recipe_image": "https://i.ibb.co/xfZmY4q/19739.jpg",
+    "recipe_image": "https://i.ibb.co/26F8wVt/18813.jpg",
     "recipe_id": 3,
     "recipe_name": "Grilled Salmon",
     "short_description": "Juicy grilled salmon fillets marinated in herbs and lemon.",
@@ -64,10 +64,10 @@
     "calories": "180 calories"
   },
   {
-    "recipe_image": "https://i.ibb.co/TwBTHcb/20212.jpg",
+    "recipe_image": "https://i.ibb.co/PQH1bhH/75626.jpg",
     "recipe_id": 5,
     "recipe_name": "Mushroom Risotto",
-    "short_description": "Creamy and flavorful risotto made with mushrooms and Parmesan cheese.",
+    "short_description": "Creamy, flavorful risotto made with mushrooms and Parmesan cheese.",
     "ingredients": [
       "300 g Arborio rice",
       "500 g mushrooms",
@@ -80,7 +80,7 @@
     "calories": "280 calories"
   },
   {
-    "recipe_image": "https://i.ibb.co/PQH1bhH/75626.jpg",
+    "recipe_image": "https://i.ibb.co/gJh1fs0/14218.jpg",
     "recipe_id": 6,
     "recipe_name": "Banana Bread",
     "short_description": "A moist and delicious banana bread perfect for breakfast or dessert.",

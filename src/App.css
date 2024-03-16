@@ -3,4 +3,14 @@
 }
 .font-poppins {
   font-family: "Poppins", sans-serif;
+  color: #150b2b99;
+}
+.card {
+  border: 1px solid rgb(209, 208, 208);
+}
+.card p {
+  border-bottom: 1px solid rgb(240, 234, 234);
+}
+.card ul {
+  border-bottom: 1px solid rgb(246, 234, 234);
 }
