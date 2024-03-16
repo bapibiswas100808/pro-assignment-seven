@@ -8,6 +8,9 @@
 .card {
   border: 1px solid rgb(209, 208, 208);
 }
+.card h4 {
+  border-bottom: 1px solid rgb(209, 208, 208);
+}
 .card p {
   border-bottom: 1px solid rgb(240, 234, 234);
 }

@@ -2,7 +2,7 @@ import { IoMdTime } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 import PropTypes from "prop-types";
 
-const SingleFood = ({ item }) => {
+const SingleFood = ({ item, HandleSelectFood }) => {
   const {
     recipe_image,
     recipe_name,
@@ -34,7 +34,10 @@ const SingleFood = ({ item }) => {
           <h5 className="font-poppins text-[15px] ">{calories}</h5>
         </div>
       </div>
-      <button className="btn border-0 rounded-3xl bg-[#0BE58A] font-roboto text-md font-semibold cursor-pointer hover:bg-gray-300 w-full lg:w-2/3">
+      <button
+        onClick={() => HandleSelectFood(item)}
+        className="btn border-0 rounded-3xl bg-[#0BE58A] font-roboto text-md font-semibold cursor-pointer hover:bg-gray-300 w-full lg:w-2/3"
+      >
         Ready To Cook?
       </button>
     </div>
@@ -42,5 +45,6 @@ const SingleFood = ({ item }) => {
 };
 SingleFood.propTypes = {
   item: PropTypes.object.isRequired,
+  HandleSelectFood: PropTypes.func,
 };
 export default SingleFood;
