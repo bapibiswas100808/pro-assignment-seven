@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SingleFood from "../SingleFood/SingleFood";
+import toast from "react-hot-toast";
 
 const Recipe = () => {
   const [foodItem, setFoodItem] = useState([]);
@@ -15,7 +16,7 @@ const Recipe = () => {
     if (!isExists) {
       setSelectedFood([...selectedFood, food]);
     } else {
-      alert("Already selected");
+      toast.error("The Item is Already Selected For Cooking!");
     }
   };
   const HandleSelectCook = (cookItem) => {

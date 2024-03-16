@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import Navbar from "./Components/Navbar/Navbar";
@@ -9,6 +10,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Recipe></Recipe>
+      <Toaster position="top-right"></Toaster>
     </div>
   );
 }
