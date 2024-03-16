@@ -27,7 +27,7 @@ const Recipe = () => {
     setTotalTime(totalTime + addedTime);
     setTotalCalories(totalCalories + addedCalories);
     const isCooked = selectedFood.filter(
-      (item) => item.recipe_id != cookItem.recipe_id
+      (item) => item.recipe_id !== cookItem.recipe_id
     );
     setSelectedFood(isCooked);
   };
@@ -61,7 +61,7 @@ const Recipe = () => {
         </div>
         <div className="w-[87%] lg:w-2/5 p-6 rounded-3xl card">
           <h4 className="font-roboto text-xl font-bold text-center pb-3 border-b-4">
-            Cooking now : {selectedFood?.length}
+            Want To Cook : {selectedFood?.length}
           </h4>
           <div className="overflow-x-auto">
             <table className="table">
@@ -101,11 +101,10 @@ const Recipe = () => {
             </table>
           </div>
           <h4 className="font-roboto text-xl font-bold text-center pb-3 border-b-4">
-            Cooking Finished : {cookingItem?.length}
+            Currently Cooking : {cookingItem?.length}
           </h4>
           <div className="overflow-x-auto">
             <table className="table">
-              {/* head */}
               <thead>
                 <tr>
                   <th></th>

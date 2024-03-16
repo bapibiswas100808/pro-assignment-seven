@@ -38,7 +38,7 @@ const SingleFood = ({ item, HandleSelectFood }) => {
         onClick={() => HandleSelectFood(item)}
         className="btn border-0 rounded-3xl bg-[#0BE58A] font-roboto text-md font-semibold cursor-pointer hover:bg-gray-300 w-full lg:w-2/3"
       >
-        Ready To Cook?
+        Want To Cook
       </button>
     </div>
   );
