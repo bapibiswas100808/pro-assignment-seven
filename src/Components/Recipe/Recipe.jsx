@@ -25,6 +25,10 @@ const Recipe = () => {
     const addedCalories = parseInt(cookItem.calories.split(" ")[0]);
     setTotalTime(totalTime + addedTime);
     setTotalCalories(totalCalories + addedCalories);
+    const isCooked = selectedFood.filter(
+      (item) => item.recipe_id != cookItem.recipe_id
+    );
+    setSelectedFood(isCooked);
   };
 
   useEffect(() => {
@@ -33,7 +37,7 @@ const Recipe = () => {
       .then((data) => setFoodItem(data));
   }, []);
   return (
-    <div className="mt-10 lg:mt-24">
+    <div className="mt-10 lg:mt-24 mb-10">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <h2 className="text-2xl lg:text-4xl font-semibold font-roboto">
           Our Recipes
@@ -60,7 +64,6 @@ const Recipe = () => {
           </h4>
           <div className="overflow-x-auto">
             <table className="table">
-              {/* head */}
               <thead>
                 <tr>
                   <th></th>
@@ -129,10 +132,12 @@ const Recipe = () => {
                   <th></th>
                   <td></td>
                   <td className="font-poppins text-sm">
-                    Total Time:{totalTime}
+                    Total Time: {totalTime}
+                    <span className="ml-1">Minutes</span>
                   </td>
                   <td className="font-poppins text-sm">
-                    Total Calories:{totalCalories}
+                    Total Calories: {totalCalories}
+                    <span className="ml-1"> Calories</span>
                   </td>
                 </tr>
               </tbody>

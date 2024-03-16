@@ -16,7 +16,7 @@ const SingleFood = ({ item, HandleSelectFood }) => {
       <img className="max-h-48 rounded-xl w-full" src={recipe_image} alt="" />
       <h3 className="font-roboto text-xl font-semibold mb-0">{recipe_name}</h3>
       <p className="font-poppins mb-0 pb-4">{short_description}</p>
-      <h4 className="mb-0 font-roboto">Ingredients: {ingredients.length}</h4>
+      <h3 className="mb-0 font-roboto">Ingredients: {ingredients.length}</h3>
       <ul className="mb-0 pb-4 space-y-2">
         {ingredients?.map((ingredient, idx) => (
           <li className="font-poppins" key={idx}>

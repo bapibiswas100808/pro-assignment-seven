@@ -17,3 +17,6 @@
 .card ul {
   border-bottom: 1px solid rgb(246, 234, 234);
 }
+td {
+  background-color: #28282808;
+}
